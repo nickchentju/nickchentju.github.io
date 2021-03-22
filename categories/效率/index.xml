@@ -1,0 +1,21 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>效率 - 分类 - Nick不务正业</title>
+        <link>/categories/%E6%95%88%E7%8E%87/</link>
+        <description>效率 - 分类 - Nick不务正业</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 04 Apr 2020 12:10:01 &#43;0800</lastBuildDate><atom:link href="/categories/%E6%95%88%E7%8E%87/" rel="self" type="application/rss+xml" /><item>
+    <title>如何进行文件管理</title>
+    <link>/posts/files-management/</link>
+    <pubDate>Sat, 04 Apr 2020 12:10:01 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>/posts/files-management/</guid>
+    <description><![CDATA[<p>多平台、多设备同步，能快速找到想要的文件，再加上易于回溯算是文件管理的三个要求。</p>]]></description>
+</item><item>
+    <title>关于项目管理</title>
+    <link>/posts/projects-management/</link>
+    <pubDate>Sat, 08 Feb 2020 12:10:01 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>/posts/projects-management/</guid>
+    <description><![CDATA[<p>工作和生活中，经常会遇到一些比较大的任务。它不是一朝一夕可以做完的，可能需要跟别人合作或者跨越很长时间，也就是项目（Project）。</p>]]></description>
+</item></channel>
+</rss>

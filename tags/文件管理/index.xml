@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>文件管理 - 标签 - Nick不务正业</title>
+        <link>/tags/%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/</link>
+        <description>文件管理 - 标签 - Nick不务正业</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 04 Apr 2020 12:10:01 &#43;0800</lastBuildDate><atom:link href="/tags/%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/" rel="self" type="application/rss+xml" /><item>
+    <title>如何进行文件管理</title>
+    <link>/posts/files-management/</link>
+    <pubDate>Sat, 04 Apr 2020 12:10:01 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>/posts/files-management/</guid>
+    <description><![CDATA[<p>多平台、多设备同步，能快速找到想要的文件，再加上易于回溯算是文件管理的三个要求。</p>]]></description>
+</item></channel>
+</rss>

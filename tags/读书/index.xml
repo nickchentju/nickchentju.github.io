@@ -1,0 +1,21 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>读书 - 标签 - Nick不务正业</title>
+        <link>/tags/%E8%AF%BB%E4%B9%A6/</link>
+        <description>读书 - 标签 - Nick不务正业</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 05 Sep 2020 12:10:01 &#43;0800</lastBuildDate><atom:link href="/tags/%E8%AF%BB%E4%B9%A6/" rel="self" type="application/rss+xml" /><item>
+    <title>iOS 和iPad上的阅读app选择</title>
+    <link>/posts/reading-apps-in-ipad/</link>
+    <pubDate>Sat, 05 Sep 2020 12:10:01 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>/posts/reading-apps-in-ipad/</guid>
+    <description><![CDATA[<p>回顾整理了一下自己阅读用到的app 和流程。</p>]]></description>
+</item><item>
+    <title>谈谈自己的新习惯</title>
+    <link>/posts/new-habit/</link>
+    <pubDate>Sat, 05 Sep 2020 12:10:01 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>/posts/new-habit/</guid>
+    <description><![CDATA[<p>转眼间回到学校已经快1个半月了，从疫情居家的状态要切换回科研民工。趁着这个契机，我尝试改变之前的一些习惯，希望可以给自己带来一些新的变化。</p>]]></description>
+</item></channel>
+</rss>
