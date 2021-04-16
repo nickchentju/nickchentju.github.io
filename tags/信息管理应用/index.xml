@@ -1,0 +1,14 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>信息管理，应用 - 标签 - Nick不务正业</title>
+        <link>/tags/%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E5%BA%94%E7%94%A8/</link>
+        <description>信息管理，应用 - 标签 - Nick不务正业</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 15 Apr 2021 12:10:01 &#43;0800</lastBuildDate><atom:link href="/tags/%E4%BF%A1%E6%81%AF%E7%AE%A1%E7%90%86%E5%BA%94%E7%94%A8/" rel="self" type="application/rss+xml" /><item>
+    <title>信息流3.0</title>
+    <link>/posts/information-flow3rd/</link>
+    <pubDate>Thu, 15 Apr 2021 12:10:01 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>/posts/information-flow3rd/</guid>
+    <description><![CDATA[<p>2021年对自己信息流的再整理</p>]]></description>
+</item></channel>
+</rss>

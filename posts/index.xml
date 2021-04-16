@@ -3,7 +3,14 @@
         <title>所有文章 - Nick不务正业</title>
         <link>/posts/</link>
         <description>所有文章 | Nick不务正业</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Fri, 19 Mar 2021 13:03:07 &#43;0800</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 15 Apr 2021 12:10:01 &#43;0800</lastBuildDate><atom:link href="/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>信息流3.0</title>
+    <link>/posts/information-flow3rd/</link>
+    <pubDate>Thu, 15 Apr 2021 12:10:01 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>/posts/information-flow3rd/</guid>
+    <description><![CDATA[<p>2021年对自己信息流的再整理</p>]]></description>
+</item><item>
     <title>利用Hugo &#43; Github pages 搭建静态博客</title>
     <link>/posts/hugo-github-pages/</link>
     <pubDate>Fri, 19 Mar 2021 13:03:07 &#43;0800</pubDate>

@@ -20,7 +20,7 @@
 <meta name="application-name" content="Nick不务正业">
 <meta name="apple-mobile-web-app-title" content="Nick不务正业"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/hugo-github-pages/" /><link rel="prev" href="/posts/how-to-do-difficult-job/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/hugo-github-pages/" /><link rel="prev" href="/posts/how-to-do-difficult-job/" /><link rel="next" href="/posts/information-flow3rd/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "\/posts\/hugo-github-pages\/"
-        },"genre": "posts","keywords": "博客, 应用","wordcount":  1188 ,
+        },"genre": "posts","keywords": "博客, 应用","wordcount":  1194 ,
         "url": "\/posts\/hugo-github-pages\/","datePublished": "2021-03-19T13:03:07+08:00","dateModified": "2021-03-19T13:03:07+08:00","publisher": {
             "@type": "Organization",
             "name": "作者"},"author": {
@@ -106,7 +106,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">利用Hugo &#43; Github pages 搭建静态博客</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>作者</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E6%8A%80%E5%B7%A7/"><i class="far fa-folder fa-fw"></i>技巧</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-19">2021-03-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1188 字&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-03-19">2021-03-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1194 字&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -207,7 +207,8 @@ git init  <span class="c1"># 初始化 Git 库。</span>
 git add .  <span class="c1"># 添加所有修改过的文件。你也可以只添加某个文件。</span>
 git commit -m <span class="s2">&#34;Add a new post&#34;</span>  <span class="c1"># &#34;Add a new post&#34; 是 commit message.</span>
 </code></pre></div><h3 id="将修改推至远程库">将修改推至远程库</h3>
-<p>最后在仓库设置中的「Github Pages」 一页中检查一下发布的网址和Source，就可以在提供的Github pages 中看到自己的博客了。</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">git push -u origin master -f
+</code></pre></div><p>最后在仓库设置中的「Github Pages」 一页中检查一下发布的网址和Source，就可以在提供的Github pages 中看到自己的博客了。</p>
 <p><img
         class="lazyload"
         src="/svg/loading.min.svg"
@@ -266,7 +267,8 @@ git push origin main
         </section>
     </div>
 
-    <div class="post-nav"><a href="/posts/how-to-do-difficult-job/" class="prev" rel="prev" title="如何着手做困难的工作？"><i class="fas fa-angle-left fa-fw"></i>如何着手做困难的工作？</a></div>
+    <div class="post-nav"><a href="/posts/how-to-do-difficult-job/" class="prev" rel="prev" title="如何着手做困难的工作？"><i class="fas fa-angle-left fa-fw"></i>如何着手做困难的工作？</a>
+            <a href="/posts/information-flow3rd/" class="next" rel="next" title="信息流3.0">信息流3.0<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 </article></div>
             </main><footer class="footer">
