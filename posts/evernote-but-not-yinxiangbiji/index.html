@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>解决无法登录 EverNote 而跳转印象笔记的问题 - Nick不务正业</title><meta name="Description" content="啥都想做，啥都不精"><meta property="og:title" content="解决无法登录 EverNote 而跳转印象笔记的问题" />
+<meta property="og:description" content="解决无法登录 EverNote 而跳转印象笔记的问题 前几天读到一篇 Hum 关于稍后读的文章，对于利用 IFTTT 等自动化应用将RSS 中的文章自动发送到 Pocket，再将Poc" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/evernote-but-not-yinxiangbiji/" />
+<meta property="og:image" content="/dog.png"/>
+<meta property="article:published_time" content="2021-05-31T21:10:01+08:00" />
+<meta property="article:modified_time" content="2021-06-01T13:58:26+08:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/dog.png"/>
+
+<meta name="twitter:title" content="解决无法登录 EverNote 而跳转印象笔记的问题"/>
+<meta name="twitter:description" content="解决无法登录 EverNote 而跳转印象笔记的问题 前几天读到一篇 Hum 关于稍后读的文章，对于利用 IFTTT 等自动化应用将RSS 中的文章自动发送到 Pocket，再将Poc"/>
+<meta name="application-name" content="Nick不务正业">
+<meta name="apple-mobile-web-app-title" content="Nick不务正业"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="/posts/evernote-but-not-yinxiangbiji/" /><link rel="prev" href="/posts/information-flow3rd/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "解决无法登录 EverNote 而跳转印象笔记的问题",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "\/posts\/evernote-but-not-yinxiangbiji\/"
+        },"genre": "posts","keywords": "应用, 笔记","wordcount":  1401 ,
+        "url": "\/posts\/evernote-but-not-yinxiangbiji\/","datePublished": "2021-05-31T21:10:01+08:00","dateModified": "2021-06-01T13:58:26+08:00","publisher": {
+            "@type": "Organization",
+            "name": "Nick"},"author": {
+                "@type": "Person",
+                "name": "Nick"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Nick不务正业">Nick不务正业</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/">📝 文章 </a><a class="menu-item" href="/books/">📙 读书 </a><a class="menu-item" href="/tags/">📢 标签 </a><a class="menu-item" href="/categories/">📦 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Nick不务正业">Nick不务正业</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">📝文章</a><a class="menu-item" href="/books/" title="">📙读书</a><a class="menu-item" href="/tags/" title="">📢标签</a><a class="menu-item" href="/categories/" title="">📦分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">解决无法登录 EverNote 而跳转印象笔记的问题</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Nick</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/%E6%95%88%E7%8E%87/"><i class="far fa-folder fa-fw"></i>效率</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-31">2021-05-31</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;约 1401 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><h1 id="解决无法登录-evernote-而跳转印象笔记的问题">解决无法登录 EverNote 而跳转印象笔记的问题</h1>
+<p>前几天读到一篇 Hum 关于稍后读的文章，对于利用 IFTTT 等自动化应用将RSS 中的文章自动发送到 Pocket，再将Pocket 中做的摘抄发送到 EverNote 比较感兴趣，就想着把 Evernote 重新捡起来试试。由于印象笔记和evernote 已经拆分，并独立运行，而因为臃肿不堪和广告狂轰乱炸我已经弃用了印象笔记，所以我的目标是印象笔记国际版，也就是Evernote。但是在登录Evernote 时，我就遇到了一系列问题。</p>
+<p>首先是 Evernote 的官网根本打不开，点开官网会被重定向至印象笔记的官网，并在首页的最上端有这样一段话：</p>
+<blockquote>
+<p>Evernote 已基于你的访问地信息，将你自动跳转至印象笔记网页。收藏此网页、下载印象笔记App体验更多印象笔记帐户专属新功能：Markdown，思维导图，分享，任务清单，OCR，素材库、空间…更多新功能等你体验。</p>
+</blockquote>
+<p>当时看到这段话我就想骂娘了，虽然国内版和国际版分了家，但是国际版也并没有因为违反国内的法律而被墙，或者宣布退出中国市场。无视消费者的诉求，直接重定向至自己的网站，甚至是将自己无处不在的广告直接打到了说明底下，这是有多想告诉所有人：我们做了 Markdown，思维导图、任务清单，快来用我吧。但殊不知，有许多人就是因为印象笔记繁杂的功能而弃之不用，宁愿选择更加昂贵的 Evernote。</p>
+<p>骂归骂，我还是想要找到 evernote 的下载地址，登录进我的国际版账户。在网上随便一搜，发现和我一样因为印象笔记流氓式地重定向而气愤的人还有不少。<a href="https://zhuanlan.zhihu.com/p/135899932" target="_blank" rel="noopener noreffer">有一位朋友</a> 因为无法从印象笔记中登录自己的 Evernote 找到了印象笔记和 Evernote  的售后，最后印象笔记的售后没给出解决方案，只是将皮球踢给了 Evernote，而 Evernote 这边最后也只能提供了 <a href="https://cdn1.evernote.com/win6/public/Evernote%5c_6.17.6.8292.exe" target="_blank" rel="noopener noreffer">Windows 版的安装包</a>，让他先安装好再登录自己的账号。</p>
+<p>于是我也下载了同样的安装包，安装之后果然是 Evernote 而不是印象笔记，区别就是图标以及名称。一个是白色的大象图标，应用名称是Evernote，而印象笔记是绿色的大象图标。安装好之后选择 Evernote International 进行登录，如果之前注册过国际版的账号的话，登录就可以了。如果没有国际版账号，千万不能选择印象笔记的国内账号，否则就会直接变成国内的印象笔记，又将看到无穷无止的广告。如果没有国际版的账号，可以选择注册一个新的账号，当然在这个客户端上选择注册新的，也只是印象笔记而不是 Evernote，所以我建议在移动端客户端上进行注册。</p>
+<p>对于iOS 端，直接在 app store 进行搜索，也是无法下载到 Evernote的。大概是和网页端一样，国区的app store 已经将 Evernote 等同为印象笔记。而要下载可以通过外区如港区、美区的账号进行下载。 下载后可以登录也可以注册新的账号，注册完之后可以再回到桌面端进行登录。</p>
+<p>以下是印象笔记和 Evernote 的桌面端和 iOS 端的界面对比。</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="https://nickchentju.oss-cn-shanghai.aliyuncs.com/img/Untitled%20%281%29.png"
+        data-srcset="https://nickchentju.oss-cn-shanghai.aliyuncs.com/img/Untitled%20%281%29.png, https://nickchentju.oss-cn-shanghai.aliyuncs.com/img/Untitled%20%281%29.png 1.5x, https://nickchentju.oss-cn-shanghai.aliyuncs.com/img/Untitled%20%281%29.png 2x"
+        data-sizes="auto"
+        alt="https://nickchentju.oss-cn-shanghai.aliyuncs.com/img/Untitled%20(1).png"
+        title="Untitled (1)" /></p>
+<p>不得不说，印象笔记这几年的操作越来越看不懂了，好好的为用户打造更好的笔记不做，却硬要给用户塞一堆用不上的功能。不过今天刚刚看到印象笔记将清单功能独立出来做了一个新的应用——「印象清单」，希望以后能将这些功能独立出来，并且在主程序中加入可以开关的按钮，这样想专注于笔记的用户还是可以将印象笔记作为一个纯粹的笔记应用。就像前几年豆瓣一样，一股脑地将阅读、集市、音乐功能全部施加在豆瓣这个应用中，最后不仅没有达到1+1&gt;2 的效果，反而劝退了一帮豆瓣书影音功能的拥趸。 希望国内的印象笔记团队能够听取用户的呼声，不要一味地将功能叠加作为吸引新用户的主要卖点，多一些沉淀，做好国人最舒服、最好用的笔记软件。</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2021-06-01</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="/posts/evernote-but-not-yinxiangbiji/" data-title="解决无法登录 EverNote 而跳转印象笔记的问题" data-ralateuid="/3038906823"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="/posts/evernote-but-not-yinxiangbiji/" data-title="解决无法登录 EverNote 而跳转印象笔记的问题"><i class="fab fa-evernote fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/%E5%BA%94%E7%94%A8/">应用</a>,&nbsp;<a href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/information-flow3rd/" class="prev" rel="prev" title="信息流3.0"><i class="fas fa-angle-left fa-fw"></i>信息流3.0</a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.80.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/katex/copy-tex.min.css"><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/lib/katex/katex.min.js"></script><script type="text/javascript" src="/lib/katex/auto-render.min.js"></script><script type="text/javascript" src="/lib/katex/copy-tex.min.js"></script><script type="text/javascript" src="/lib/katex/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
