@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <title>解决 Word 插入题注出现「错误!文档中没有指定样式的文字」的问题 :: 小径分岔的花园</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta charset="UTF-8"/>
+<meta name="renderer" content="webkit"/>
+<meta name="force-rendering" content="webkit"/>
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<script>if ( false || (!!window.MSInputMethodContext && !!document.documentMode)) document.write('\x3Cscript id="_iealwn_js" data-outver="11" src="https://support.dmeng.net/ie-alert-warning/latest.js">\x3C/script>'); </script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="写毕业论文的时候遇到了图片题注无法自动编号的问题，虽然用土办法暂时解决了，但是还是促使我下定决心好好研究研究 Word 的编号方法。
+"/>
+<meta name="keywords" content=""/>
+<link rel="canonical" href="https://nickchentju.github.io/the-number-list-in-word/" />
+<link rel="stylesheet" href="/main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:500&display=swap" media="print" onload="this.media='all'">
+<script>
+    (function(d) {
+      var config = {
+        kitId: 'gqa4aic',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+<link rel="shortcut icon" href="https://nickchentju.github.io/favicon.ico">
+
+<meta property="og:title" content="解决 Word 插入题注出现「错误!文档中没有指定样式的文字」的问题" />
+<meta property="og:description" content="写毕业论文的时候遇到了图片题注无法自动编号的问题，虽然用土办法暂时解决了，但是还是促使我下定决心好好研究研究 Word 的编号方法。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nickchentju.github.io/the-number-list-in-word/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-06-25T21:10:01+08:00" />
+<meta property="article:modified_time" content="2021-06-25T21:10:01+08:00" />
+
+
+
+
+    
+  <link rel="prefetch" href="https://nickchentju.github.io/weekly-update1/">
+  <link rel="prefetch" href="https://nickchentju.github.io/information-flow3rd/">
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a href="https://nickchentju.github.io/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__text">小径分岔的花园</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu hidden">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/books/">阅读</a></li>
+        
+      
+        
+          <li><a href="/archives/">归档</a></li>
+        
+      
+        
+          <li><a href="/about/">关于</a></li>
+        
+      
+    
+
+                <li><a href="/search/"><svg t="1556783211810" class="search-box-icon" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2078" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"></style></defs><path d="M981.39652054 920.86314525L704.56522859 644.0318533a366.65501012 366.65501012 0 1 0-61.73503038 65.64040943L917.55859375 984.40065827z m-856.17925347-493.12920861a284.19142939 284.19142939 0 1 1 283.89101562 284.19142939A284.49184317 284.49184317 0 0 1 125.06706019 427.73393664z" fill="" p-id="2079" data-spm-anchor-id="a313x.7781069.0.i2"></path></svg></a></li>
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/books/">阅读</a></li>
+      
+    
+      
+        <li><a href="/archives/">归档</a></li>
+      
+    
+      
+        <li><a href="/about/">关于</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+
+
+      <div class="content">
+        
+  
+  
+  
+  
+  <div class="post posts\productivity\the-number-list-in-Word.md">
+    <div  class="breadcrumb">
+  
+
+  
+
+  
+
+  
+
+<li>
+  <a href="https://nickchentju.github.io/">首页</a>
+</li>
+
+
+<li>
+  <a href="https://nickchentju.github.io/posts/">文章</a>
+</li>
+
+
+<li>
+  <a href="https://nickchentju.github.io/posts/productivity/">折腾</a>
+</li>
+
+
+<li class="active">
+  <a href="https://nickchentju.github.io/the-number-list-in-word/">解决 Word 插入题注出现「错误!文档中没有指定样式的文字」的问题</a>
+</li>
+
+</div>
+
+
+  
+    <h2 class="post-title"><a href="https://nickchentju.github.io/the-number-list-in-word/">解决 Word 插入题注出现「错误!文档中没有指定样式的文字」的问题</a></h2>
+    <div class="post-meta">
+      
+        <span class="post-date">2021-06-25 21:10:01</span>
+        
+          
+        
+      
+    </div>
+
+    
+  
+    <div class="post-content">
+      
+      <p>写毕业论文的时候遇到了图片题注无法自动编号的问题，虽然用土办法暂时解决了，但是还是促使我下定决心好好研究研究 Word 的编号方法。</p>
+<h2 id="问题提出">问题提出：</h2>
+<p>写大论文的时候需要插入题注，按照网上的说法，通过插入题注，选择标签「包含」章节号就可以实现带章节号的自动编号了。但是实践下来发现总是报错，「错误!文档中没有指定样式的文字」，一般来说这种情况说明没有使用 Word 的多级列表，因此 Word 并不知道题注的位置是哪个章节。但神奇的事情就在于我是设置了多级列表的，却还是提示这个错误。</p>
+<p><img loading='lazy' src="https://nickchentju.oss-cn-shanghai.aliyuncs.com/img/image-20210625183739901.png" alt="image-20210625183739901"  /></p>
+<h2 id="问题解决">问题解决</h2>
+<p>在网上搜索时，发现了问题所在，应该是**「域」无法识别我所选择的标题**所致。由于我的章节的样式是自定义的，所以「域」在工作时无法识别。解决方法可以通过选择该文字区域，右键单击，选择“Edit field”。在弹出的对话框中，左上角“类别”选项框中选择“链接和引用”。在下面的“域名”中选择“StyleRef”。在中间的框中选择章节对应的样式名，确定。这里还要「更新时保留原格式」，否则保存后再打开还是会报错。</p>
+<p><img loading='lazy' src="https://nickchentju.oss-cn-shanghai.aliyuncs.com/img/image-20210625183912645.png" alt="image-20210625183912645"  /></p>
+<p>虽然以上所说的方法可以解决这个错误，但是每一次插入新的题注的时候，都得右键单击打开「编辑域」的选项进行修改，太过于麻烦，那么有没有什么一劳永逸的方法可以解决这个问题呢？</p>
+<p>分析原因，首先是为什么「域」无法识别章节。</p>
+<h3 id="endnote-插件影响">Endnote 插件影响</h3>
+<p>在「编辑」域的选项中，章节样式的最上方就是 EndNote，这不免会让人联想到是不是 EndNote 的影响。在加载项中将 EndNote 去掉之后，看看是否还会有问题。尝试以后发现并不能解决。</p>
+<h3 id="自定义样式">自定义样式</h3>
+<p>由于定义多级列表时，1级，2级，3级标题的样式都使用了自定义的样式，而不是 Word 自带的「标题 1」、「标题 2」、「标题 3」这些大纲样式，那么有没有可能是因为除了内置的标题样式外，「域」无法自动识别自定义的章节标题样式导致的呢？</p>
+<p>为了确认这一问题，要将对应的标题替换为系统内置的标题，然后将标题的格式调整为要求的格式。</p>
+<p>调整完之后，在多级列表中将1，2，3级对应的标题样式更改为系统自带的「标题 1」、「标题 2」、「标题 3」，再插入题注，最后可以看到不会再出现上述问题。这说明使用系统自带的大纲标题样式是可以成功被「域」识别的。</p>
+<h2 id="结论">结论</h2>
+<p>插入题注时出现的「错误!文档中没有指定样式的文字」问题的原因是多级列表中使用了自定义的标题样式而不被「域」识别，为了解决这个问题，有两种方法：</p>
+<ol>
+<li>手动修改域，将标题对应到所使用的自定义样式，适合题注较少，可以一一修改的情况。</li>
+<li>当题注较多时，还是建议将各级标题的样式从自定义换回系统自带的，可以一劳永逸解决这个问题。当然以后如果使用题注，最好也是直接使用系统自带的标题样式，通过对这些样式进行修改而不是另外新建，以便顺利使用题注功能。</li>
+</ol>
+      
+    </div>
+
+    
+      <span class="post-tags">
+        
+          #<a href="https://nickchentju.github.io/tags/%E5%BA%94%E7%94%A8/">应用</a>&nbsp;
+        
+          #<a href="https://nickchentju.github.io/tags/word/">Word</a>&nbsp;
+        
+      </span>
+    
+  
+    <div class="clear"></div>
+    
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            
+              <a class="pagination__title-h" href="https://github.com/lmm214/immmmm/edit/master/content/posts/productivity/the-number-list-in-Word.md" target="_blank" rel="noopener">阅读更多</a>
+            
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+              <span class="button previous">
+                <a href="https://nickchentju.github.io/weekly-update1/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">每周分享第一期</span>
+                </a>
+              </span>
+            
+            
+              <span class="button next">
+                <a href="https://nickchentju.github.io/information-flow3rd/">
+                  <span class="button__text">信息流3.0</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+
+    
+        
+
+  <script type="text/javascript" src='https://fastly.jsdelivr.net/npm/jquery@3/dist/jquery.min.js'></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($){
+      var checkComments = setInterval(function() {
+        var counts = $('.tk-comments-title').find('span').first().text();
+        if (counts) {
+          $('#twikoo_count').text(counts)
+          clearInterval(checkComments);
+        }
+      }, 1000);
+      if(window.location.hash){
+        var checkExist = setInterval(function() {
+          if ($(window.location.hash).length) {
+            $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+            clearInterval(checkExist);
+          }
+        }, 100);
+      }
+    });
+  </script>
+    
+
+    </div>
+
+      </div>
+
+      
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="copyright copyright-font">
+      <span>共 47521 字 <br/> 还在努力更新中..</br>加油！加油啦！</span>
+    </div>
+    <a class="dark-wormhole" href="https://www.foreverblog.cn/go.html" target="_blank"> <img src="/wormhole_1.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客"> </a>
+    <a class="light-wormhole" href="https://www.foreverblog.cn/go.html" target="_blank" > <img src="/wormhole_3.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客"> </a>
+    
+      <div class="copyright">
+        <span>© 2022 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a> Theme by <a href="https://twitter.com/panr" target="_blank" rel="noopener">Panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script type="text/javascript" src="/main.js?t=20220124"></script>
+
+<script type="text/javascript" src='https://fastly.jsdelivr.net/npm/jquery@3/dist/jquery.min.js'></script>
+<script type="text/javascript" src="/lately2.min.js"></script>
+<script type="text/javascript" src="/jquery.vticker.js"></script>
+<script type="text/javascript" src="/waterfall.min.js"></script>
+<script type="text/javascript" src="/slimbox2.min.js"></script>
+<script type="text/javascript" src="/main-diy-0325.js"></script>
+      
+    </div>
+  </body>
+</html>

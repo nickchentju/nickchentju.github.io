@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <title>每周分享第二期 :: 小径分岔的花园</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta charset="UTF-8"/>
+<meta name="renderer" content="webkit"/>
+<meta name="force-rendering" content="webkit"/>
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<script>if ( false || (!!window.MSInputMethodContext && !!document.documentMode)) document.write('\x3Cscript id="_iealwn_js" data-outver="11" src="https://support.dmeng.net/ie-alert-warning/latest.js">\x3C/script>'); </script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="这里是每周分享的第二期，主要介绍本周内接触的优秀应用、文章以及读过的好书。本周介绍的是 Windows 平台 RSS 阅读器 RSS 追踪、邮箱邮件 Newsletter 过滤机制的文章以及《桶川跟踪狂杀人事件》这本书 。
+"/>
+<meta name="keywords" content=""/>
+<link rel="canonical" href="https://nickchentju.github.io/weekly-update2/" />
+<link rel="stylesheet" href="/main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:500&display=swap" media="print" onload="this.media='all'">
+<script>
+    (function(d) {
+      var config = {
+        kitId: 'gqa4aic',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+<link rel="shortcut icon" href="https://nickchentju.github.io/favicon.ico">
+
+<meta property="og:title" content="每周分享第二期" />
+<meta property="og:description" content="这里是每周分享的第二期，主要介绍本周内接触的优秀应用、文章以及读过的好书。本周介绍的是 Windows 平台 RSS 阅读器 RSS 追踪、邮箱邮件 Newsletter 过滤机制的文章以及《桶川跟踪狂杀人事件》这本书 。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nickchentju.github.io/weekly-update2/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-08-24T21:10:01+08:00" />
+<meta property="article:modified_time" content="2021-08-27T13:58:26+08:00" />
+
+
+
+
+    
+  <link rel="prefetch" href="https://nickchentju.github.io/douban-pages/">
+  <link rel="prefetch" href="https://nickchentju.github.io/weekly-update1/">
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a href="https://nickchentju.github.io/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__text">小径分岔的花园</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu hidden">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/books/">阅读</a></li>
+        
+      
+        
+          <li><a href="/archives/">归档</a></li>
+        
+      
+        
+          <li><a href="/about/">关于</a></li>
+        
+      
+    
+
+                <li><a href="/search/"><svg t="1556783211810" class="search-box-icon" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2078" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"></style></defs><path d="M981.39652054 920.86314525L704.56522859 644.0318533a366.65501012 366.65501012 0 1 0-61.73503038 65.64040943L917.55859375 984.40065827z m-856.17925347-493.12920861a284.19142939 284.19142939 0 1 1 283.89101562 284.19142939A284.49184317 284.49184317 0 0 1 125.06706019 427.73393664z" fill="" p-id="2079" data-spm-anchor-id="a313x.7781069.0.i2"></path></svg></a></li>
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/books/">阅读</a></li>
+      
+    
+      
+        <li><a href="/archives/">归档</a></li>
+      
+    
+      
+        <li><a href="/about/">关于</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+
+
+      <div class="content">
+        
+  
+  
+  
+  
+  <div class="post posts\daily\weekly-update2.md">
+    <div  class="breadcrumb">
+  
+
+  
+
+  
+
+  
+
+<li>
+  <a href="https://nickchentju.github.io/">首页</a>
+</li>
+
+
+<li>
+  <a href="https://nickchentju.github.io/posts/">文章</a>
+</li>
+
+
+<li>
+  <a href="https://nickchentju.github.io/posts/daily/">日常</a>
+</li>
+
+
+<li class="active">
+  <a href="https://nickchentju.github.io/weekly-update2/">每周分享第二期</a>
+</li>
+
+</div>
+
+
+  
+    <h2 class="post-title"><a href="https://nickchentju.github.io/weekly-update2/">每周分享第二期</a></h2>
+    <div class="post-meta">
+      
+        <span class="post-date">2021-08-24 21:10:01</span>
+        
+          
+        
+      
+    </div>
+
+    
+  
+    <div class="post-content">
+      
+      <p>这里是每周分享的第二期，主要介绍本周内接触的优秀应用、文章以及读过的好书。本周介绍的是 Windows 平台 RSS 阅读器 RSS 追踪、邮箱邮件 Newsletter 过滤机制的文章以及《桶川跟踪狂杀人事件》这本书 。</p>
+<h2 id="应用">应用</h2>
+<ol>
+<li><a href="https://www.microsoft.com/en-us/p/rss-tracker/9n85pv1rjd6v">RSS 追踪</a>，集成多种主流RSS服务的原生 UWP 阅读器，采用了微软官方的 Fluent 设计语言，颜值在线，支持主流的 RSS 服务，内置了字典可以选中翻译，字体、字号和行距都可以进行设置，作为 Feedly、Inoreader 等网页 RSS 服务的本地阅读器是完全胜任的。</li>
+</ol>
+<h2 id="文章">文章</h2>
+<ol>
+<li>读到一篇管理 Gmail 中 Newsletter 订阅的文章  <a href="https://neilkakkar.com/gmail-hey-feed.html">Building your own Hey email Feed in Gmail | Neil Kakkar</a>，因为最近Newsletter 这种获取信息的方式又火了起来，很多媒体和博主都开通了 Newsletter，所以邮箱每天都会收到很多封。为了保持收件箱的干净清爽，可以通过 Gmail 的筛选过滤机制对 Newsletter 进行统一归类和阅读。</li>
+</ol>
+<ul>
+<li>通过设置<code>feed</code> 标签把已有的newsletter 进行过滤筛选并集中到文件夹下。</li>
+<li>平时将<code>feed</code> 折叠，从而避免干扰。</li>
+<li>通过设置快捷键快速浏览邮件，将有价值的标记为重要，后续进行阅读。</li>
+</ul>
+<h2 id="每周一书">每周一书</h2>
+<p><strong>《<a href="https://book.douban.com/subject/35094680/">桶川跟踪狂杀人事件</a>》</strong></p>
+<p><img loading='lazy' src="https://nickchentju.oss-cn-shanghai.aliyuncs.com/img/image-20211114160934387.png" alt="image-20211114160934387"  /></p>
+<p>初看这个标题，会以为又是一本日本推理小说，颇有些名侦探柯南里剧名的意思。但其实，这本书是一位新闻周刊的记者，以自己对发生在桶川的一桩杀人案的报导过程为线索，是一篇真实案件的记录和反思。</p>
+<p>本书的台版译名就叫做「被杀死三次的女孩」，其实这源自受害者父亲的一句话:</p>
+<blockquote>
+<p>我的女儿被杀了三次：一次是被凶手杀死的，一次是被不受理报案的警方杀死的，一次是被媒体杀死的。</p>
+</blockquote>
+<p>1999年，日本埼玉县女大学生猪野诗织在桶川车站外，被突然冲上前来的陌生男子刺死。案件发生后，一度被认为是随机杀人案。但随着对受害者亲友的走访，诗织的前男友小松和人的嫌疑越来越大。原来早在三个月前，诗织就因为无法忍受前男友的变态控制欲而提出与其分手，但小松不仅不同意分手，还威胁诗织如果分手就让她家破人亡。无奈之下，诗织只能求助警方，将两人之间的谈话录音作为证据，希望警方介入，让小松不再骚扰她。而当地警署却表示，男女之间的正常交往他们无法介入，甚至以诗织收了许多小松送的礼物为由，认为诗织只是无理取闹。在警方的不作为之下，小松的骚扰越来越严重，甚至包括发传单诋毁诗织、向诗织父亲的公司寄信辱骂，以及在诗织家外面大声鸣笛等。最后在一天清晨，诗织锁好自行车，准备搭乘电车前往大学的时候，被人用刀残忍地杀害。</p>
+<p>案件发生以后，警方并没有投入大量的警力进行侦破，嫌疑人迟迟没有落网，连小松和人也下落不明。于是舆论开始慢慢发酵，在警方的刻意透露之下，诗织遇害时的穿着被公之于众。各家媒体上出现了有关诗织是「拜金女」的报导，并因为其在居酒屋打过工便认定她是「酒家女」。有诗织因为其「拜金」、和「不明人士」有交集等才会遭遇刺杀的叙述开始流传开。但无论诗织是否穿着昂贵的衣服，都不应该成为其受害的理由。而真正导致其死亡的原因却因为警方的无能而石沉大海。</p>
+<p>虽然故事发生在日本，但是随着社交媒体上铺天盖地的新闻、评论、转发和发酵，越来越多的事件在互联网上演各种版本。与此同时，「网暴」一次也越来越多地被提及，很多人因为莫须有的罪名被人肉、辱骂甚至波及家人。</p>
+      
+    </div>
+
+    
+      <span class="post-tags">
+        
+          #<a href="https://nickchentju.github.io/tags/%E5%BA%94%E7%94%A8/">应用</a>&nbsp;
+        
+          #<a href="https://nickchentju.github.io/tags/%E8%AF%BB%E4%B9%A6%E5%88%86%E4%BA%AB/">读书，分享</a>&nbsp;
+        
+      </span>
+    
+  
+    <div class="clear"></div>
+    
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            
+              <a class="pagination__title-h" href="https://github.com/lmm214/immmmm/edit/master/content/posts/daily/weekly-update2.md" target="_blank" rel="noopener">阅读更多</a>
+            
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+              <span class="button previous">
+                <a href="https://nickchentju.github.io/douban-pages/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">在静态博客网站上添加豆瓣阅读、观影界面</span>
+                </a>
+              </span>
+            
+            
+              <span class="button next">
+                <a href="https://nickchentju.github.io/weekly-update1/">
+                  <span class="button__text">每周分享第一期</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+
+    
+        
+
+  <script type="text/javascript" src='https://fastly.jsdelivr.net/npm/jquery@3/dist/jquery.min.js'></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($){
+      var checkComments = setInterval(function() {
+        var counts = $('.tk-comments-title').find('span').first().text();
+        if (counts) {
+          $('#twikoo_count').text(counts)
+          clearInterval(checkComments);
+        }
+      }, 1000);
+      if(window.location.hash){
+        var checkExist = setInterval(function() {
+          if ($(window.location.hash).length) {
+            $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+            clearInterval(checkExist);
+          }
+        }, 100);
+      }
+    });
+  </script>
+    
+
+    </div>
+
+      </div>
+
+      
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="copyright copyright-font">
+      <span>共 47521 字 <br/> 还在努力更新中..</br>加油！加油啦！</span>
+    </div>
+    <a class="dark-wormhole" href="https://www.foreverblog.cn/go.html" target="_blank"> <img src="/wormhole_1.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客"> </a>
+    <a class="light-wormhole" href="https://www.foreverblog.cn/go.html" target="_blank" > <img src="/wormhole_3.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客"> </a>
+    
+      <div class="copyright">
+        <span>© 2022 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a> Theme by <a href="https://twitter.com/panr" target="_blank" rel="noopener">Panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script type="text/javascript" src="/main.js?t=20220124"></script>
+
+<script type="text/javascript" src='https://fastly.jsdelivr.net/npm/jquery@3/dist/jquery.min.js'></script>
+<script type="text/javascript" src="/lately2.min.js"></script>
+<script type="text/javascript" src="/jquery.vticker.js"></script>
+<script type="text/javascript" src="/waterfall.min.js"></script>
+<script type="text/javascript" src="/slimbox2.min.js"></script>
+<script type="text/javascript" src="/main-diy-0325.js"></script>
+      
+    </div>
+  </body>
+</html>

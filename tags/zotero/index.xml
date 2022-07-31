@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zotero on 小径分岔的花园</title>
+    <link>https://nickchentju.github.io/tags/zotero/</link>
+    <description>Recent content in Zotero on 小径分岔的花园</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 21 Oct 2021 14:40:01 +0800</lastBuildDate><atom:link href="https://nickchentju.github.io/tags/zotero/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>文献阅读流程3.0</title>
+      <link>https://nickchentju.github.io/wenxianyuedu/</link>
+      <pubDate>Thu, 21 Oct 2021 14:40:01 +0800</pubDate>
+      
+      <guid>https://nickchentju.github.io/wenxianyuedu/</guid>
+      <description>&lt;p&gt;将 Zotero 和 Obsidian 结合起来，实现文献阅读、管理、内化的全流程闭环。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>知识管理 on 小径分岔的花园</title>
+    <link>https://nickchentju.github.io/tags/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/</link>
+    <description>Recent content in 知识管理 on 小径分岔的花园</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 19 Aug 2020 13:03:07 +0800</lastBuildDate><atom:link href="https://nickchentju.github.io/tags/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>信息流及所用到的工具</title>
+      <link>https://nickchentju.github.io/tools-for-imformation-collecting/</link>
+      <pubDate>Wed, 19 Aug 2020 13:03:07 +0800</pubDate>
+      
+      <guid>https://nickchentju.github.io/tools-for-imformation-collecting/</guid>
+      <description>&lt;p&gt;在买入了iPad Air 之后，手中的设备又多了一台，借着这个机会，把目前自己的信息流重新梳理了一遍，明确了每个设备、应用在信息流中的位置和功能。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

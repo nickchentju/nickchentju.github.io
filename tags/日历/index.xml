@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>日历 on 小径分岔的花园</title>
+    <link>https://nickchentju.github.io/tags/%E6%97%A5%E5%8E%86/</link>
+    <description>Recent content in 日历 on 小径分岔的花园</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 15 Sep 2020 12:10:01 +0800</lastBuildDate><atom:link href="https://nickchentju.github.io/tags/%E6%97%A5%E5%8E%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>实现 Windows 系统日历和 iOS 系统日历的同步</title>
+      <link>https://nickchentju.github.io/shi-xian-windows-xi-tong-ri-li-he-ios-xi-tong-ri-li-de-tong-bu/</link>
+      <pubDate>Tue, 15 Sep 2020 12:10:01 +0800</pubDate>
+      
+      <guid>https://nickchentju.github.io/shi-xian-windows-xi-tong-ri-li-he-ios-xi-tong-ri-li-de-tong-bu/</guid>
+      <description>&lt;p&gt;通过第三方日历来实现 Windows 和 iOS 系统自带的日历的同步。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

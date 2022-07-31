@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>效率 on 小径分岔的花园</title>
+    <link>https://nickchentju.github.io/categories/%E6%95%88%E7%8E%87/</link>
+    <description>Recent content in 效率 on 小径分岔的花园</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 15 Apr 2021 12:10:01 +0800</lastBuildDate><atom:link href="https://nickchentju.github.io/categories/%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>信息流3.0</title>
+      <link>https://nickchentju.github.io/information-flow3rd/</link>
+      <pubDate>Thu, 15 Apr 2021 12:10:01 +0800</pubDate>
+      
+      <guid>https://nickchentju.github.io/information-flow3rd/</guid>
+      <description>&lt;p&gt;2021年对自己信息流的再整理&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>如何进行文件管理</title>
+      <link>https://nickchentju.github.io/files-management/</link>
+      <pubDate>Sat, 04 Apr 2020 12:10:01 +0800</pubDate>
+      
+      <guid>https://nickchentju.github.io/files-management/</guid>
+      <description>&lt;p&gt;多平台、多设备同步，能快速找到想要的文件，再加上易于回溯算是文件管理的三个要求。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于项目管理</title>
+      <link>https://nickchentju.github.io/projects-management/</link>
+      <pubDate>Sat, 08 Feb 2020 12:10:01 +0800</pubDate>
+      
+      <guid>https://nickchentju.github.io/projects-management/</guid>
+      <description>&lt;p&gt;工作和生活中，经常会遇到一些比较大的任务。它不是一朝一夕可以做完的，可能需要跟别人合作或者跨越很长时间，也就是项目（Project）。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

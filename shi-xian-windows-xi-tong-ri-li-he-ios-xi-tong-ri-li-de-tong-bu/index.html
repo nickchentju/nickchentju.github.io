@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <title>实现 Windows 系统日历和 iOS 系统日历的同步 :: 小径分岔的花园</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta charset="UTF-8"/>
+<meta name="renderer" content="webkit"/>
+<meta name="force-rendering" content="webkit"/>
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<script>if ( false || (!!window.MSInputMethodContext && !!document.documentMode)) document.write('\x3Cscript id="_iealwn_js" data-outver="11" src="https://support.dmeng.net/ie-alert-warning/latest.js">\x3C/script>'); </script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="通过第三方日历来实现 Windows 和 iOS 系统自带的日历的同步。
+"/>
+<meta name="keywords" content=""/>
+<link rel="canonical" href="https://nickchentju.github.io/shi-xian-windows-xi-tong-ri-li-he-ios-xi-tong-ri-li-de-tong-bu/" />
+<link rel="stylesheet" href="/main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:500&display=swap" media="print" onload="this.media='all'">
+<script>
+    (function(d) {
+      var config = {
+        kitId: 'gqa4aic',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+<link rel="shortcut icon" href="https://nickchentju.github.io/favicon.ico">
+
+<meta property="og:title" content="实现 Windows 系统日历和 iOS 系统日历的同步" />
+<meta property="og:description" content="通过第三方日历来实现 Windows 和 iOS 系统自带的日历的同步。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nickchentju.github.io/shi-xian-windows-xi-tong-ri-li-he-ios-xi-tong-ri-li-de-tong-bu/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2020-09-15T12:10:01+08:00" />
+<meta property="article:modified_time" content="2020-09-15T12:10:01+08:00" />
+
+
+
+
+    
+  <link rel="prefetch" href="https://nickchentju.github.io/how-to-do-difficult-job/">
+  <link rel="prefetch" href="https://nickchentju.github.io/reading-apps-in-ipad/">
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a href="https://nickchentju.github.io/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__text">小径分岔的花园</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu hidden">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/books/">阅读</a></li>
+        
+      
+        
+          <li><a href="/archives/">归档</a></li>
+        
+      
+        
+          <li><a href="/about/">关于</a></li>
+        
+      
+    
+
+                <li><a href="/search/"><svg t="1556783211810" class="search-box-icon" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2078" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"></style></defs><path d="M981.39652054 920.86314525L704.56522859 644.0318533a366.65501012 366.65501012 0 1 0-61.73503038 65.64040943L917.55859375 984.40065827z m-856.17925347-493.12920861a284.19142939 284.19142939 0 1 1 283.89101562 284.19142939A284.49184317 284.49184317 0 0 1 125.06706019 427.73393664z" fill="" p-id="2079" data-spm-anchor-id="a313x.7781069.0.i2"></path></svg></a></li>
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/books/">阅读</a></li>
+      
+    
+      
+        <li><a href="/archives/">归档</a></li>
+      
+    
+      
+        <li><a href="/about/">关于</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+
+
+      <div class="content">
+        
+  
+  
+  
+  
+  <div class="post posts\productivity\shi-xian-windows-xi-tong-ri-li-he-ios-xi-tong-ri-li-de-tong-bu.md">
+    <div  class="breadcrumb">
+  
+
+  
+
+  
+
+  
+
+<li>
+  <a href="https://nickchentju.github.io/">首页</a>
+</li>
+
+
+<li>
+  <a href="https://nickchentju.github.io/posts/">文章</a>
+</li>
+
+
+<li>
+  <a href="https://nickchentju.github.io/posts/productivity/">折腾</a>
+</li>
+
+
+<li class="active">
+  <a href="https://nickchentju.github.io/shi-xian-windows-xi-tong-ri-li-he-ios-xi-tong-ri-li-de-tong-bu/">实现 Windows 系统日历和 iOS 系统日历的同步</a>
+</li>
+
+</div>
+
+
+  
+    <h2 class="post-title"><a href="https://nickchentju.github.io/shi-xian-windows-xi-tong-ri-li-he-ios-xi-tong-ri-li-de-tong-bu/">实现 Windows 系统日历和 iOS 系统日历的同步</a></h2>
+    <div class="post-meta">
+      
+        <span class="post-date">2020-09-15 12:10:01</span>
+        
+          
+        
+      
+    </div>
+
+    
+  
+    <div class="post-content">
+      
+      <p>通过第三方日历来实现 Windows 和 iOS 系统自带的日历的同步。</p>
+<p>苹果生态一直是其保持用户粘性的重要凭借，iPhone，iPad 和 mac 可以通过 iCloud 同步所有的系统应用的数据，比如日历、备忘录、音乐、图书等。对于 Windows 和 iOS 双修的用户来说，其实也可以通过第三方日历来实现类似的日历同步。</p>
+<h2 id="邮件应用">邮件应用</h2>
+<p>不管是 Windows 还是 iOS， 系统邮件应用都和日历应用是绑定在一起的。</p>
+<h3 id="windows">Windows</h3>
+<p>Windows 10 更新后，将邮件、日历、人脉（通讯录）和To Do （待办事项）整合在了一起，在任何一个应用内都可以找到左下角这个应用切换的快捷方式。</p>
+<p>整合后，如果在邮件应用添加了新的邮箱，如果邮箱支持 Windows 日历的话，就会自动将邮箱绑定的日历在日历应用中展示出来。通俗地说，便是买一赠一，买邮箱，赠品是邮箱绑定的日历。</p>
+<p>虽然说目前的邮箱应用都支持内嵌日历，比如教育邮箱、QQ 邮箱、网易邮箱等，但是实测下来并不是所有的邮箱内嵌的日历都可以在 Windows 的日历应用中展示。目前试过的只有微软的 Outlook 邮箱和谷歌邮箱。</p>
+<p><img loading='lazy' src="https://nickchentju.oss-cn-shanghai.aliyuncs.com/img/image-20200922123511635.png" alt="image-20200922123511635"  /></p>
+<h3 id="ios">iOS</h3>
+<p>iOS 上的邮件也可以同步邮箱内的日历、备忘录等信息，在设置&gt; 邮件 &gt; 账户中可以添加不同的邮箱账户。可以看到，跟 Windows 上一样，有些邮箱也只能同步备忘录，无法同步日历。而谷歌邮箱是可以在 iOS 上同步日历、通讯录的。</p>
+<p><img loading='lazy' src="https://nickchentju.oss-cn-shanghai.aliyuncs.com/img/image-20200922125743728.png" alt="image-20200922125743728"  /></p>
+<h2 id="建立连接">建立连接</h2>
+<p>利用 Windows 和 iOS  上的邮件应用，我们就有了 3 种方法实现连接。</p>
+<ul>
+<li>
+<p>利用微软的 outlook 邮箱</p>
+</li>
+<li>
+<p>利用苹果的 iCloud 邮箱</p>
+</li>
+<li>
+<p>利用谷歌等支持日历同步的第三方邮箱</p>
+</li>
+</ul>
+<p>前两种方法虽然可以在 Windows 或 iOS 其中一个平台效果较好，但是需要注册新的邮箱，而且在跨平台上可能由于本身的封闭性会出现一些问题。如果已经是一个Gmail 用户的话，不妨选择作为第三方的谷歌日历作为其中牵线搭桥的任务。</p>
+<h3 id="windows-端的设置">Windows 端的设置</h3>
+<p>Windows 端需要在 邮件服务中添加自己的Gmail 账号。由于Win 10 的UWP 应用对访问外网有一些限制，所以首先需要接触对邮箱应用的外网限制才能成功添加Gmail 账户。</p>
+<p>可以下载 <strong>使用<a href="https://github.com/tiagonmas/Windows-Loopback-Exemption-Manager">Windows Loopback Exemption Manager</a>程序</strong>解除限制，勾选 microsoft.windows.authhost 开头的和microsoft.windowscommunicationsapps 开头的几个选项，保存。</p>
+<p>添加完邮箱账号后，日历应用会自动将 Gmail 账户绑定的谷歌日历同步到本地。如果升级到最新的 Windows 10 , 还可以试用预览版的日历应用，只不过有一股浓浓的mac 的味道。</p>
+<p><img loading='lazy' src="https://nickchentju.oss-cn-shanghai.aliyuncs.com/img/image-20200922133358343.png" alt="image-20200922133358343"  /></p>
+<h3 id="ios-端的设置">iOS 端的设置</h3>
+<p>到iOS 这端，就显得容易得多。只需要在设置&gt; 邮件 &gt; 账户 中添加谷歌邮箱即可。然后进入谷歌邮箱的设置，将同步日历的选项打开，就可以将谷歌日历中的事件同步到本地日历应用中。</p>
+<p><img loading='lazy' src="https://nickchentju.oss-cn-shanghai.aliyuncs.com/img/image-20200922133802438.png" alt="image-20200922133802438"  /></p>
+      
+    </div>
+
+    
+      <span class="post-tags">
+        
+          #<a href="https://nickchentju.github.io/tags/%E5%BA%94%E7%94%A8/">应用</a>&nbsp;
+        
+          #<a href="https://nickchentju.github.io/tags/%E6%97%A5%E5%8E%86/">日历</a>&nbsp;
+        
+      </span>
+    
+  
+    <div class="clear"></div>
+    
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            
+              <a class="pagination__title-h" href="https://github.com/lmm214/immmmm/edit/master/content/posts/productivity/shi-xian-windows-xi-tong-ri-li-he-ios-xi-tong-ri-li-de-tong-bu.md" target="_blank" rel="noopener">阅读更多</a>
+            
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+              <span class="button previous">
+                <a href="https://nickchentju.github.io/how-to-do-difficult-job/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">如何着手做困难的工作？</span>
+                </a>
+              </span>
+            
+            
+              <span class="button next">
+                <a href="https://nickchentju.github.io/reading-apps-in-ipad/">
+                  <span class="button__text">iOS 和iPad上的阅读app选择</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+
+    
+        
+
+  <script type="text/javascript" src='https://fastly.jsdelivr.net/npm/jquery@3/dist/jquery.min.js'></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($){
+      var checkComments = setInterval(function() {
+        var counts = $('.tk-comments-title').find('span').first().text();
+        if (counts) {
+          $('#twikoo_count').text(counts)
+          clearInterval(checkComments);
+        }
+      }, 1000);
+      if(window.location.hash){
+        var checkExist = setInterval(function() {
+          if ($(window.location.hash).length) {
+            $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+            clearInterval(checkExist);
+          }
+        }, 100);
+      }
+    });
+  </script>
+    
+
+    </div>
+
+      </div>
+
+      
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="copyright copyright-font">
+      <span>共 47521 字 <br/> 还在努力更新中..</br>加油！加油啦！</span>
+    </div>
+    <a class="dark-wormhole" href="https://www.foreverblog.cn/go.html" target="_blank"> <img src="/wormhole_1.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客"> </a>
+    <a class="light-wormhole" href="https://www.foreverblog.cn/go.html" target="_blank" > <img src="/wormhole_3.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客"> </a>
+    
+      <div class="copyright">
+        <span>© 2022 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a> Theme by <a href="https://twitter.com/panr" target="_blank" rel="noopener">Panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script type="text/javascript" src="/main.js?t=20220124"></script>
+
+<script type="text/javascript" src='https://fastly.jsdelivr.net/npm/jquery@3/dist/jquery.min.js'></script>
+<script type="text/javascript" src="/lately2.min.js"></script>
+<script type="text/javascript" src="/jquery.vticker.js"></script>
+<script type="text/javascript" src="/waterfall.min.js"></script>
+<script type="text/javascript" src="/slimbox2.min.js"></script>
+<script type="text/javascript" src="/main-diy-0325.js"></script>
+      
+    </div>
+  </body>
+</html>

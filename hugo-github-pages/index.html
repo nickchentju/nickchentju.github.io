@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+      <title>利用Hugo &#43; Github pages 搭建静态博客 :: 小径分岔的花园</title>
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta charset="UTF-8"/>
+<meta name="renderer" content="webkit"/>
+<meta name="force-rendering" content="webkit"/>
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<script>if ( false || (!!window.MSInputMethodContext && !!document.documentMode)) document.write('\x3Cscript id="_iealwn_js" data-outver="11" src="https://support.dmeng.net/ie-alert-warning/latest.js">\x3C/script>'); </script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="description" content="谁不想拥有一个属于自己的博客呢？
+"/>
+<meta name="keywords" content=""/>
+<link rel="canonical" href="https://nickchentju.github.io/hugo-github-pages/" />
+<link rel="stylesheet" href="/main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:500&display=swap" media="print" onload="this.media='all'">
+<script>
+    (function(d) {
+      var config = {
+        kitId: 'gqa4aic',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+<link rel="shortcut icon" href="https://nickchentju.github.io/favicon.ico">
+
+<meta property="og:title" content="利用Hugo &#43; Github pages 搭建静态博客" />
+<meta property="og:description" content="谁不想拥有一个属于自己的博客呢？" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://nickchentju.github.io/hugo-github-pages/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-03-19T13:03:07+08:00" />
+<meta property="article:modified_time" content="2021-03-19T13:03:07+08:00" />
+
+
+
+
+    
+  <link rel="prefetch" href="https://nickchentju.github.io/information-flow3rd/">
+  <link rel="prefetch" href="https://nickchentju.github.io/how-to-do-difficult-job/">
+
+  </head>
+  <body class="dark-theme">
+    <div class="container">
+      <header class="header">
+  <span class="header__inner">
+    <a href="https://nickchentju.github.io/" class="logo" style="text-decoration: none;">
+  
+    <span class="logo__text">小径分岔的花园</span>
+    <span class="logo__cursor"></span>
+  
+</a>
+
+    <span class="header__right">
+      
+        <nav class="menu hidden">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/books/">阅读</a></li>
+        
+      
+        
+          <li><a href="/archives/">归档</a></li>
+        
+      
+        
+          <li><a href="/about/">关于</a></li>
+        
+      
+    
+
+                <li><a href="/search/"><svg t="1556783211810" class="search-box-icon" class="icon" style="" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2078" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><style type="text/css"></style></defs><path d="M981.39652054 920.86314525L704.56522859 644.0318533a366.65501012 366.65501012 0 1 0-61.73503038 65.64040943L917.55859375 984.40065827z m-856.17925347-493.12920861a284.19142939 284.19142939 0 1 1 283.89101562 284.19142939A284.49184317 284.49184317 0 0 1 125.06706019 427.73393664z" fill="" p-id="2079" data-spm-anchor-id="a313x.7781069.0.i2"></path></svg></a></li>
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/books/">阅读</a></li>
+      
+    
+      
+        <li><a href="/archives/">归档</a></li>
+      
+    
+      
+        <li><a href="/about/">关于</a></li>
+      
+    
+  </ul>
+</nav>
+
+        <span class="menu-trigger hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+          </svg>
+        </span>
+      
+      <span class="theme-toggle">
+        <svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+
+      </span>
+    </span>
+  </span>
+</header>
+
+
+
+
+      <div class="content">
+        
+  
+  
+  
+  
+  <div class="post posts\productivity\Hugo-GitHub-pages.md">
+    <div  class="breadcrumb">
+  
+
+  
+
+  
+
+  
+
+<li>
+  <a href="https://nickchentju.github.io/">首页</a>
+</li>
+
+
+<li>
+  <a href="https://nickchentju.github.io/posts/">文章</a>
+</li>
+
+
+<li>
+  <a href="https://nickchentju.github.io/posts/productivity/">折腾</a>
+</li>
+
+
+<li class="active">
+  <a href="https://nickchentju.github.io/hugo-github-pages/">利用Hugo &#43; Github pages 搭建静态博客</a>
+</li>
+
+</div>
+
+
+  
+    <h2 class="post-title"><a href="https://nickchentju.github.io/hugo-github-pages/">利用Hugo + Github pages 搭建静态博客</a></h2>
+    <div class="post-meta">
+      
+        <span class="post-date">2021-03-19 13:03:07</span>
+        
+          
+        
+      
+    </div>
+
+    
+  
+    <div class="post-content">
+      
+      <p>谁不想拥有一个属于自己的博客呢？</p>
+<h2 id="利用hugo-建立网页">利用Hugo 建立网页</h2>
+<h3 id="建立网站">建立网站</h3>
+<ul>
+<li>
+<p>下载安装Hugo</p>
+</li>
+<li>
+<p>建立新网站</p>
+<pre tabindex="0"><code>hugo new site quickstart
+</code></pre><p>会在hugo 文件夹📂下新建一个名为<code>quickstart</code> 的文件夹</p>
+</li>
+<li>
+<p>选择主题</p>
+<p>可以浏览<a href="https://themes.gohugo.io/">Complete List | Hugo Themes (gohugo.io)</a> 选择一款喜欢的主题，以  <a href="https://hugoloveit.com/zh-cn/">LoveIt</a>为例，下载主题文件并放在网站下的<code>themes</code> 目录下。</p>
+<p>将主题添加到网站的配置下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>cd quickstart 
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#39;theme = &#34;LoveIt&#34;&#39;</span>
+</span></span></code></pre></div></li>
+<li>
+<p>添加博文</p>
+<p>可以手动建立一定的文件，例如<code>~content/&lt;CATEGORY&gt;/&lt;FILE&gt;.&lt;FORMAT&gt;</code>，也可以通过代码</p>
+<pre tabindex="0"><code>hugo new posts/my-first-post.md
+</code></pre><p>一般作为博文的 md. 文件开头都有一些特定的语句，代表了这篇文章的一些属性，如<code>LoveIt</code>主题下博文提供了很多可供定义的元属性。将<code>draft</code>属性设定为<code>true</code>才会使文章从草稿状态转为发布。</p>
+</li>
+<li>
+<p>开始Hugo 服务</p>
+<pre tabindex="0"><code>Hugo server -D
+</code></pre><p>运行后打开http://localhost:1313/ 就可以对网站进行预览。</p>
+</li>
+</ul>
+<h3 id="修改主题参数优化网站">修改主题参数优化网站</h3>
+<p>​	可以修改网站的配置文件 <code>config.toml</code>从而改变网站的布置。</p>
+<p>​	<code>LoveIt </code>主题可以调整的参数包括：</p>
+<ul>
+<li>支持搜索（<code>lunr</code> 或 <code>algolia</code>）</li>
+<li>显示社交账号，包括GitHub、微博、豆瓣、B站、推特等社交媒体</li>
+<li>自定义菜单栏</li>
+<li>文章支持目录</li>
+<li>支持KaTex 数学公式</li>
+<li>支持文章通过推特、Facebook、微博、Evernote 分享</li>
+</ul>
+<h3 id="建立静态网站">建立静态网站</h3>
+<pre tabindex="0"><code>hugo -D
+</code></pre><p>输出结果会存放于 <code>./public/ </code>目录下，其中包含了网站的所有静态内容和资源，接下来就是要将其部署到GitHub Pages上。</p>
+<h2 id="利用github-网页发布文章">利用Github 网页发布文章</h2>
+<h3 id="将网站文件夹转换为-git-库">将网站文件夹转换为 Git 库</h3>
+<p>进入新生成的<code>public</code>文件夹下，初始化 Git 库</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd ~/lilian-blog/public  <span style="color:#75715e"># 生成的 HTML 文件保存在 &#34;public&#34; 目录中，&#34;public&#34; 文件夹会被转换为 Git 库。</span>
+</span></span><span style="display:flex;"><span>git init  <span style="color:#75715e"># 初始化 Git 库。</span>
+</span></span></code></pre></div><p>在<code>public</code>文件夹下会多出了<code>.git</code> 文件</p>
+<h3 id="将-git-本地库关联至远程库">将 Git 本地库关联至远程库</h3>
+<p>在<code>public</code>目录下为 Git 本地库添加至远程库</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote add origin git@github.com:nickchentju/nickchentju.github.io.git  
+</span></span></code></pre></div><p>查看 <code>config</code> 文件</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat .git/config  <span style="color:#75715e"># 显示 config 信息。</span>
+</span></span></code></pre></div><p>返回结果为：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>core<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>        repositoryformatversion <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>        filemode <span style="color:#f92672">=</span> false
+</span></span><span style="display:flex;"><span>        bare <span style="color:#f92672">=</span> false
+</span></span><span style="display:flex;"><span>        logallrefupdates <span style="color:#f92672">=</span> true
+</span></span><span style="display:flex;"><span>        symlinks <span style="color:#f92672">=</span> false
+</span></span><span style="display:flex;"><span>        ignorecase <span style="color:#f92672">=</span> true
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>remote <span style="color:#e6db74">&#34;origin&#34;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>        url <span style="color:#f92672">=</span> git@github.com:nickchentju/nickchentju.github.io.git
+</span></span><span style="display:flex;"><span>        fetch <span style="color:#f92672">=</span> +refs/heads/*:refs/remotes/origin/*
+</span></span></code></pre></div><p>如果 <code>[remote &quot;origin&quot;]</code> 信息正常显示，说明你的 Git 本地库已成功关联至远程库。</p>
+<h3 id="提交修改至本地库">提交修改至本地库</h3>
+<p>在<code>public</code>目录下，通过 Commit  提交修改，并写一个commit message 简短描述具体的修改内容。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git status  <span style="color:#75715e"># 查看当前修改状态。</span>
+</span></span><span style="display:flex;"><span>git add .  <span style="color:#75715e"># 添加所有修改过的文件。你也可以只添加某个文件。</span>
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;Add a new post&#34;</span>  <span style="color:#75715e"># &#34;Add a new post&#34; 是 commit message.</span>
+</span></span></code></pre></div><h3 id="将修改推至远程库">将修改推至远程库</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push -u origin master -f
+</span></span></code></pre></div><p>最后在仓库设置中的「Github Pages」 一页中检查一下发布的网址和Source，就可以在提供的Github pages 中看到自己的博客了。</p>
+<p><img loading='lazy' src="https://nickchentju.oss-cn-shanghai.aliyuncs.com/img/image-20210319141222484.png" alt="image-20210319141222484"  /></p>
+<p>最终结果如下：</p>
+<p><img loading='lazy' src="https://nickchentju.oss-cn-shanghai.aliyuncs.com/img/image-20210319141511051.png" alt="image-20210319141511051"  /></p>
+<h2 id="自动发布">自动发布</h2>
+<p>如果需要发布新的博客，是需要将以上步骤重新走一遍的，当然也可以通过自动化脚本进行发布，只需要将博客文章写好并放到post 文件夹中，之后执行脚本，就可以更新文章。常见的脚本如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/sh
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e"># If a command fails then the deploy stops</span>
+</span></span><span style="display:flex;"><span>set -e
+</span></span><span style="display:flex;"><span>printf <span style="color:#e6db74">&#34;\033[0;32mDeploying updates to GitHub...\033[0m\n&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Build the project.</span>
+</span></span><span style="display:flex;"><span>hugo -d docs <span style="color:#75715e"># if using a theme, replace with `hugo -t &lt;YOURTHEME&gt;`</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Add changes to git.</span>
+</span></span><span style="display:flex;"><span>git add docs
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Commit changes.</span>
+</span></span><span style="display:flex;"><span>msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;rebuilding site </span><span style="color:#66d9ef">$(</span>date<span style="color:#66d9ef">)</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[</span> -n <span style="color:#e6db74">&#34;</span>$*<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>; <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>	msg<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span>$*<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">fi</span>
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;</span>$msg<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Push source and build repos.</span>
+</span></span><span style="display:flex;"><span>git push origin main
+</span></span></code></pre></div>
+      
+    </div>
+
+    
+      <span class="post-tags">
+        
+          #<a href="https://nickchentju.github.io/tags/%E5%8D%9A%E5%AE%A2/">博客</a>&nbsp;
+        
+          #<a href="https://nickchentju.github.io/tags/%E5%BA%94%E7%94%A8/">应用</a>&nbsp;
+        
+      </span>
+    
+  
+    <div class="clear"></div>
+    
+    
+      
+        <div class="pagination">
+          <div class="pagination__title">
+            
+              <a class="pagination__title-h" href="https://github.com/lmm214/immmmm/edit/master/content/posts/productivity/Hugo-GitHub-pages.md" target="_blank" rel="noopener">阅读更多</a>
+            
+            <hr />
+          </div>
+          <div class="pagination__buttons">
+            
+              <span class="button previous">
+                <a href="https://nickchentju.github.io/information-flow3rd/">
+                  <span class="button__icon">←</span>
+                  <span class="button__text">信息流3.0</span>
+                </a>
+              </span>
+            
+            
+              <span class="button next">
+                <a href="https://nickchentju.github.io/how-to-do-difficult-job/">
+                  <span class="button__text">如何着手做困难的工作？</span>
+                  <span class="button__icon">→</span>
+                </a>
+              </span>
+            
+          </div>
+        </div>
+      
+    
+
+
+    
+        
+
+  <script type="text/javascript" src='https://fastly.jsdelivr.net/npm/jquery@3/dist/jquery.min.js'></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($){
+      var checkComments = setInterval(function() {
+        var counts = $('.tk-comments-title').find('span').first().text();
+        if (counts) {
+          $('#twikoo_count').text(counts)
+          clearInterval(checkComments);
+        }
+      }, 1000);
+      if(window.location.hash){
+        var checkExist = setInterval(function() {
+          if ($(window.location.hash).length) {
+            $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+            clearInterval(checkExist);
+          }
+        }, 100);
+      }
+    });
+  </script>
+    
+
+    </div>
+
+      </div>
+
+      
+        
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="copyright copyright-font">
+      <span>共 47521 字 <br/> 还在努力更新中..</br>加油！加油啦！</span>
+    </div>
+    <a class="dark-wormhole" href="https://www.foreverblog.cn/go.html" target="_blank"> <img src="/wormhole_1.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客"> </a>
+    <a class="light-wormhole" href="https://www.foreverblog.cn/go.html" target="_blank" > <img src="/wormhole_3.gif" alt="" style="width:auto;height:32px;" title="穿梭虫洞-随机访问十年之约友链博客"> </a>
+    
+      <div class="copyright">
+        <span>© 2022 Powered by <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a> Theme by <a href="https://twitter.com/panr" target="_blank" rel="noopener">Panr</a></span>
+      </div>
+    
+  </div>
+</footer>
+
+<script type="text/javascript" src="/main.js?t=20220124"></script>
+
+<script type="text/javascript" src='https://fastly.jsdelivr.net/npm/jquery@3/dist/jquery.min.js'></script>
+<script type="text/javascript" src="/lately2.min.js"></script>
+<script type="text/javascript" src="/jquery.vticker.js"></script>
+<script type="text/javascript" src="/waterfall.min.js"></script>
+<script type="text/javascript" src="/slimbox2.min.js"></script>
+<script type="text/javascript" src="/main-diy-0325.js"></script>
+      
+    </div>
+  </body>
+</html>

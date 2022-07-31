@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>日常 on 小径分岔的花园</title>
+    <link>https://nickchentju.github.io/posts/daily/</link>
+    <description>Recent content in 日常 on 小径分岔的花园</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 15 Dec 2021 15:10:01 +0800</lastBuildDate><atom:link href="https://nickchentju.github.io/posts/daily/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>从一次失眠谈谈睡前读物的选择</title>
+      <link>https://nickchentju.github.io/shui-qian-du-wu/</link>
+      <pubDate>Wed, 15 Dec 2021 15:10:01 +0800</pubDate>
+      
+      <guid>https://nickchentju.github.io/shui-qian-du-wu/</guid>
+      <description>&lt;p&gt;睡前用 Kindle 看上几页书一直被我用来替代睡前玩手机，这么久以来都运转良好，但是昨天看了一本书后，我竟然失眠了，让我不得不对睡前读的书进行思考。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>谈谈记录的重要性</title>
+      <link>https://nickchentju.github.io/ji-lu-zhong-yao/</link>
+      <pubDate>Wed, 08 Dec 2021 15:10:01 +0800</pubDate>
+      
+      <guid>https://nickchentju.github.io/ji-lu-zhong-yao/</guid>
+      <description>&lt;p&gt;记忆不仅来自人的大脑，还来自待办应用、日历、日记、照片这些电子媒介。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>每周分享第五期</title>
+      <link>https://nickchentju.github.io/weekly-update5/</link>
+      <pubDate>Sat, 27 Nov 2021 15:10:01 +0800</pubDate>
+      
+      <guid>https://nickchentju.github.io/weekly-update5/</guid>
+      <description>&lt;p&gt;这里是每周分享的第二期，主要介绍本周内接触的优秀应用、文章以及读过的好书。本周介绍的是 Windows 和 iOS 通知同步应用 Dell Mobile Connect、纸质书、编辑创造软件和笔记组织形式的文章以及《以利为利》这本书 。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>每周分享第四期</title>
+      <link>https://nickchentju.github.io/weekly-update4/</link>
+      <pubDate>Thu, 14 Oct 2021 15:10:01 +0800</pubDate>
+      
+      <guid>https://nickchentju.github.io/weekly-update4/</guid>
+      <description>&lt;p&gt;这里是每周分享的第二期，主要介绍本周内接触的优秀应用、文章以及读过的好书。本周介绍的是 iOS 端记账应用 &lt;strong&gt;Moze&lt;/strong&gt;、介绍图表可视化要点的文章以及《奶酪与蛆虫》这本书 。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>每周分享第三期</title>
+      <link>https://nickchentju.github.io/weekly-update3/</link>
+      <pubDate>Mon, 13 Sep 2021 15:56:01 +0800</pubDate>
+      
+      <guid>https://nickchentju.github.io/weekly-update3/</guid>
+      <description>&lt;p&gt;这里是每周分享的第三期，主要介绍本周内接触的优秀应用、文章以及读过的好书。本周介绍的是 电子书和有声书借阅应用 Libby、Eric Gilbert 教授为自己的博士生写的博士须知以及《重走》这本书。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

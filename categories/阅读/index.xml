@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>阅读 on 小径分岔的花园</title>
+    <link>https://nickchentju.github.io/categories/%E9%98%85%E8%AF%BB/</link>
+    <description>Recent content in 阅读 on 小径分岔的花园</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 15 Dec 2021 15:10:01 +0800</lastBuildDate><atom:link href="https://nickchentju.github.io/categories/%E9%98%85%E8%AF%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>从一次失眠谈谈睡前读物的选择</title>
+      <link>https://nickchentju.github.io/shui-qian-du-wu/</link>
+      <pubDate>Wed, 15 Dec 2021 15:10:01 +0800</pubDate>
+      
+      <guid>https://nickchentju.github.io/shui-qian-du-wu/</guid>
+      <description>&lt;p&gt;睡前用 Kindle 看上几页书一直被我用来替代睡前玩手机，这么久以来都运转良好，但是昨天看了一本书后，我竟然失眠了，让我不得不对睡前读的书进行思考。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>《以利为利》阅读摘录和笔记</title>
+      <link>https://nickchentju.github.io/yiliweili/</link>
+      <pubDate>Thu, 28 Oct 2021 19:27:01 +0800</pubDate>
+      
+      <guid>https://nickchentju.github.io/yiliweili/</guid>
+      <description>&lt;p&gt;近期读到的非常深刻的一本讲述中国经济的小书。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>文献阅读流程3.0</title>
+      <link>https://nickchentju.github.io/wenxianyuedu/</link>
+      <pubDate>Thu, 21 Oct 2021 14:40:01 +0800</pubDate>
+      
+      <guid>https://nickchentju.github.io/wenxianyuedu/</guid>
+      <description>&lt;p&gt;将 Zotero 和 Obsidian 结合起来，实现文献阅读、管理、内化的全流程闭环。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
